@@ -15,7 +15,9 @@
   ],
   "exports": {
     ".": "./dist/index.d.ts",
-    "./basic": "./dist/basic.d.ts"
+    "./basic": "./dist/basic.d.ts",
+    "./boolean": "./dist/boolean.d.ts",
+    "./string": "./dist/string.d.ts"
   },
   "keywords": [
     "typescript",
