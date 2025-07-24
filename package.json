@@ -1,0 +1,40 @@
+{
+  "name": "ts-types",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "tsc --noEmit",
+    "format": "prettier --write src",
+    "release": "pnpm run build && changeset publish"
+  },
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "exports": {
+    ".": "./dist/index.d.ts",
+    "./basic": "./dist/basic.d.ts"
+  },
+  "keywords": [
+    "typescript",
+    "types",
+    "utils"
+  ],
+  "author": "Rabah Taib",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rabah-taib/ts-types"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.5",
+    "prettier": "^3.6.2",
+    "prettier-plugin-organize-imports": "^4.2.0",
+    "typescript": "^5.8.3"
+  }
+}
