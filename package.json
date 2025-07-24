@@ -15,8 +15,10 @@
   ],
   "exports": {
     ".": "./dist/index.d.ts",
-    "./basic": "./dist/basic.d.ts",
+    "./global": "./dist/global.d.ts",
     "./boolean": "./dist/boolean.d.ts",
+    "./common": "./dist/common.d.ts",
+    "./function": "./dist/function.d.ts",
     "./string": "./dist/string.d.ts"
   },
   "keywords": [
