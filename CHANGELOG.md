@@ -1,5 +1,11 @@
 # ts-types
 
+## 1.2.0
+
+### Minor Changes
+
+- a5e8be5: Add more types
+
 ## 1.1.0
 
 ### Minor Changes
