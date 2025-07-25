@@ -57,16 +57,6 @@ export type Inferable = undefined | null | {};
 export type Choices<Choices> = Choices | Inferable;
 
 /**
- * A type representing an object key
- */
-export type DictKey = string | number | symbol;
-
-/**
- * Similar to {@linkcode Record}
- */
-export type Dict<K extends DictKey = string, V = unknown> = Record<K, V>;
-
-/**
  * A type representing a mutable list
  *
  * @template T - Elements' type

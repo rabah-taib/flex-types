@@ -16,10 +16,11 @@
   "exports": {
     ".": "./dist/index.d.ts",
     "./global": "./dist/global.d.ts",
-    "./boolean": "./dist/boolean.d.ts",
-    "./common": "./dist/common.d.ts",
-    "./function": "./dist/function.d.ts",
-    "./string": "./dist/string.d.ts"
+    "./boolean": "./dist/boolean/index.d.ts",
+    "./common": "./dist/common/index.d.ts",
+    "./function": "./dist/function/index.d.ts",
+    "./string": "./dist/string/index.d.ts",
+    "./object": "./dist/object/index.d.ts"
   },
   "keywords": [
     "typescript",

@@ -12,6 +12,26 @@ declare global {
   type Dict<K extends type.DictKey = string, V = unknown> = type.Dict<K, V>;
 
   /**
+   * @see {@link type.Keys Keys}
+   */
+  type Keys<T extends Dict> = type.Keys<T>;
+
+  /**
+   * @see {@link type.Values Values}
+   */
+  type Values<T extends Dict> = type.Values<T>;
+
+  /**
+   * @see {@link type.Entries Entries}
+   */
+  type Entries<T extends Dict> = type.Entries<T>;
+
+  /**
+   * @see {@link type.Get Get}
+   */
+  type Get<T extends Dict, K extends Keys<T>> = type.Get<T, K>;
+
+  /**
    * @see {@link type.MutableList MutableList}
    */
   type MutableList<T = unknown> = type.MutableList<T>;
