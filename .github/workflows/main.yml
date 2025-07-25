@@ -29,3 +29,15 @@ jobs:
       - name: Build
         run: pnpm run lint && pnpm run build
 
+      - name: Format
+        run: pnpm run format
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "github-actions@github.com"
+          git add .
+          git commit -m "style: format code"
+
+      - name: Push changes
+        run: git push
